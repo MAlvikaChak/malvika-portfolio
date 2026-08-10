@@ -1,0 +1,179 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Some of Design Proposals - Malvika Chak</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#1b1b1e",
+                      "secondary-fixed-dim": "#c6c6cf",
+                      "on-secondary-fixed": "#1a1b22",
+                      "surface": "#131316",
+                      "surface-container": "#1f1f22",
+                      "tertiary": "#c8c6c9",
+                      "error-container": "#93000a",
+                      "tertiary-container": "#a8a6a9",
+                      "secondary-container": "#45464e",
+                      "inverse-surface": "#e4e1e6",
+                      "on-secondary-fixed-variant": "#45464e",
+                      "surface-variant": "#353438",
+                      "inverse-on-surface": "#303033",
+                      "tertiary-fixed-dim": "#c8c6c9",
+                      "on-primary-fixed-variant": "#004e5c",
+                      "on-background": "#e4e1e6",
+                      "tertiary-fixed": "#e4e1e5",
+                      "primary-fixed": "#acedff",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-highest": "#353438",
+                      "secondary-fixed": "#e2e1eb",
+                      "primary-container": "#06b6d4",
+                      "on-primary-fixed": "#001f26",
+                      "on-secondary": "#2f3037",
+                      "outline": "#869397",
+                      "inverse-primary": "#00687a",
+                      "on-error": "#690005",
+                      "surface-container-lowest": "#0e0e11",
+                      "on-tertiary-container": "#3c3c3f",
+                      "on-tertiary": "#303033",
+                      "surface-container-high": "#2a2a2d",
+                      "outline-variant": "#3d494c",
+                      "secondary": "#c6c6cf",
+                      "on-primary-container": "#00424f",
+                      "on-primary": "#003640",
+                      "surface-tint": "#4cd7f6",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#bcc9cd",
+                      "on-surface": "#e4e1e6",
+                      "surface-dim": "#131316",
+                      "primary": "#4cd7f6",
+                      "primary-fixed-dim": "#4cd7f6",
+                      "background": "#131316",
+                      "on-tertiary-fixed-variant": "#47464a",
+                      "surface-bright": "#39393c",
+                      "on-secondary-container": "#b4b4bd",
+                      "on-tertiary-fixed": "#1b1b1e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                  "margin-mobile": "16px",
+                  "margin-desktop": "24px",
+                  "gutter": "24px",
+                  "section-gap": "8rem",
+                  "element-gap": "1.5rem"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "Geist"
+                      ],
+                      "display": [
+                              "Geist"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Jetbrains Mono"
+                      ]
+              },
+              "fontSize": {}
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col selection:bg-primary/30 selection:text-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-6 max-w-[1200px] mx-auto">
+<a class="font-headline font-bold text-xl tracking-tighter text-on-background" href="../index.html">Malvika Chak</a>
+<div class="hidden md:flex items-center gap-2"><a class="text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-4 py-2 rounded-lg transition-all active:scale-95 active:bg-surface-variant" href="../index.html#about">About</a><a class="text-label-sm uppercase tracking-widest text-on-surface bg-surface-container-high px-4 py-2 rounded-lg transition-all active:scale-95 active:bg-surface-variant" href="../index.html#work">Work</a><a class="text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-4 py-2 rounded-lg transition-all active:scale-95 active:bg-surface-variant" href="../index.html#experience">Experience</a><a class="text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-4 py-2 rounded-lg transition-all active:scale-95 active:bg-surface-variant" href="../index.html#contact">Contact</a></div>
+<a class="font-label text-sm uppercase tracking-widest border border-outline-variant text-on-background px-6 py-2 rounded hover:bg-surface-container-high transition-all duration-300 hidden md:block text-center" download="Malvika_Chak_Resume.pdf" href="../assets/Malvika_Chak_Resume.pdf">Download CV</a>
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop flex-grow w-full">
+<!-- Hero Section -->
+<section class="mb-section-gap pt-12 md:pt-24 border-b border-surface-variant pb-16">
+<div class="max-w-4xl">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-on-background">Some of Design Proposals</h1>
+<h2 class="font-headline text-2xl md:text-3xl text-secondary-fixed-dim mb-8">Selected Workplace &amp; Commercial Concepts</h2>
+</div>
+</section>
+<!-- Project Details Bento -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container border border-surface-variant p-8 rounded-lg flex flex-col justify-center relative overflow-hidden group hover:border-primary/50 transition-colors duration-500">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<span class="font-label text-primary text-xs uppercase tracking-widest mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">category</span> Category</span>
+<h3 class="font-headline text-xl text-on-background font-semibold">Workplace Design</h3>
+</div>
+<div class="bg-surface-container border border-surface-variant p-8 rounded-lg flex flex-col justify-center relative overflow-hidden group hover:border-primary/50 transition-colors duration-500">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<span class="font-label text-primary text-xs uppercase tracking-widest mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">location_on</span> Location</span>
+<h3 class="font-headline text-xl text-on-background font-semibold">Various</h3>
+</div>
+</div>
+</section>
+<!-- Visual Documentation -->
+<section class="mb-section-gap">
+<div class="flex items-center justify-between mb-12 border-b border-surface-variant pb-4">
+<h3 class="font-headline text-3xl font-semibold text-on-background">Visual Documentation</h3>
+<span class="font-label text-secondary-fixed-dim text-sm">ARCHIVE_V.1</span>
+</div>
+<div class="flex flex-col gap-16">
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 1" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjo7Xyxh2XgJ7Eznyhq2PAS63DkJQ3131WaJvG0aJzS0DOM5mmRIzWjj5OmUAV68YLfA28ZfbDMZEYyEDz6ff5I6ibJ6rGgk80lA62-l0HXzpADV-tpX5rdm5xlZxY5dXnxiMqbLb-k3IOd86LT0AxlWC6mLM_TgOFd0fMHYxI8POBrXz-4VxBqQP1O94kdEQmDM3TlozspsSBRmXQZgWaag1UZ_SMcVwKM_BjAcBugOgQILsXWOfMRLLpIrnJ5_tiSQ">
+</div>
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 2" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc7OvLs2IjvKGf79pDYW9wf4sdfyczzQY-qf8L0IlIZDG5yr8tc4d63a5r4ePtlleQXkjc18HRSh8amFdd48IMViX4B_5-NNN1IA96J5EGr3uDAsnzaTQuxqvl86gVuCyWXES0KKS15YvU_Mf2o9xhNvI74b6Ccbpmb_NAIONVL65_5pGcE_HUZIPbDcTg7wtAI69kHOSNn1W1F4t6raZl9RW7x_NHyZpNzADFDQIeL6mv6cfpq9JuXTU4wY08SkLY7g">
+</div>
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 3" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcieqyERpiUxEyY9ft8EjWGxH401N8bgoqdF1fs0unCiZ7y5UcXc9g6KSsnoBK8hqsK8gUbwyJmKZdgTimYkGUhw7PsNpKvzT97vl33Cdox6kqvx8BWGBAolBeQdQo7ohnGZcYdaZkaZrCo7nuqzxEaHRYrGEkCOQxKifas6Q0J8ZbweZHZHpxvn25bdRXgh-IPu85XxwawKYA3uEX1Vc4aoGRuydwTU_pVMO5vuImVssNAVmjdRMKy080sEbMWFmfqA">
+</div>
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 4" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWdes0csPPOC6uJmvz0h4XEN5MmyOmQtGq1D_dD6oMMpJOROtntM93rJy8MfpJSvEZ8o3Kc0W6XC9mpdmanPh3pwQhhEZMAkj5OSxw5vbm0x8X_qEzUbqPPrxhu5rOuu3jqmTvbFtMGz_NqX3HVmjZ-gqTmfW7UTz2o6a6ZdZ3T64wFQcwtnMSNldT9TSGiRKfuVh6qm1f-CFEKBNxOH99zowCd7MM6SPm2usLisVZNk0mXX0idtElDyBhwpqfCLiFDQ">
+</div>
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 5" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5JpkSh6wGIWSRJ24D0wDTznLMB2DSzGqqvm6-0AllCZRyZqFD5oG-PkmyZcO7SH5s-CS-M1FD8dOspZl-zJDN5aBszxlratVz_E5nAqzd8sZWv1WV_EHevoRC1dFwsygdCEe7zJld3IHCZe0Z0Ywd3tTKFzMcreKFfaEmJZKgPB4FbzwLM9rJ_3sywHoFWojzAXCUmQMma0b7BzOGtgp6cFBSwr9HsuXGEVAMvaNjEIxVDhUaUQcz_M4gQkHEZ7L8aQ">
+</div>
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 6" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmfPrF0o8J0m0dk5qy-wa6-OLNVgM0Lqz3vYNPJ0QkP3l0rFgjH0YiwR5n5Q3jgX6puLhK3tZJvAWswf26-7M727zyPSXmY7-CaNACyWRx7mptnGcF8zu4OaD53lrRpBwV1_gI86dNGLMD3RN3PogLeWQInQqOTmWZ8IkRdxcswhWIqsHd4r2sX-9Ggpq30-y7oxjxTPNu_SucCR6fs-kioyzJ77A8gZSDYYSZsZLtBahA8f3dnqYMjJqubMXw2ZQ6qw">
+</div>
+<div class="w-full rounded-xl border border-outline-variant overflow-hidden bg-surface-container relative">
+<img alt="Documentation Image 7" class="w-full h-auto block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkgFIKVVyWskyOJK7GsNRWELNmCpz82cCu0J0_-9qjSq-WYoNdApgEw59keFcJ19DKPkxrOBnh8-Zj2EPCEsFHrSX43pbH6SRVXgeLrCcTmao3kuV4lmwas3hU0oBmLeQKEuhQ5er-utZK2zQ5NkHsT708HtmHd-RxCvqXAhTcO1gk_uKqajA7hMy5B7Mi5_oviarmIOLOD-f1vq1bzqsU5m8S-YQDTzlEBjxQoJDnSIIU5qgJsM0vNv5AGY3kqji7aw">
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant/20 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-6 max-w-[1200px] mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4 w-full md:w-auto">
+<a class="text-xl font-bold text-on-surface flex items-center gap-2" href="../index.html">
+<img alt="Avatar" class="w-8 h-8 rounded-full border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8qvfzxBRA1PPbSh5OmAdhqFbwGDr370IJEuvIB6FD0s_aR3wAzKfYoaX3sWsOdlFK_xkweABChbYbSKsPpbpjVfOSKEJu9oHMQJT7SzGYHd1fyT_ZM8LL0abNplLpTiCDCJ2VfwTXOqQGJtlgB1cPB1DDaGgJ-7btS02M5YTRUVU8S3avpqAzQA9K0zGGVpXsQ4KBKqs_SZcFW9RNs5AOLJdJDBnNNcjju0FcSE_YZ9BqJMBH_wx_exlB4W73Q-0Ljgfz5joZL0Xnw">
+<span class="">Malvika Chak</span>
+</a>
+<p class="font-label text-sm text-on-surface-variant">2026</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-6 w-full md:w-auto"><a class="font-label text-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="mailto:malvikachak06@gmail.com">malvikachak06@gmail.com</a><a class="font-label text-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="tel:+917011636774">+91 7011636774</a>
+<a class="font-label text-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="../index.html">New Delhi — India</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

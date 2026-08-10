@@ -1,0 +1,194 @@
+<!DOCTYPE html><html class="dark" lang="en" style="width: 1280px; height: 2088px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Technical Detailed Drawings - Malvika Chak</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#3c3c3f",
+                        "surface-tint": "#4cd7f6",
+                        "primary": "#4cd7f6",
+                        "surface-container-high": "#2a2a2d",
+                        "surface-container": "#1f1f22",
+                        "surface-container-highest": "#353438",
+                        "on-primary-fixed": "#001f26",
+                        "on-secondary-fixed-variant": "#45464e",
+                        "tertiary": "#c8c6c9",
+                        "on-tertiary-fixed": "#1b1b1e",
+                        "on-background": "#e4e1e6",
+                        "on-error": "#690005",
+                        "secondary-fixed-dim": "#c6c6cf",
+                        "outline": "#869397",
+                        "tertiary-fixed": "#e4e1e5",
+                        "inverse-surface": "#e4e1e6",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1b22",
+                        "tertiary-container": "#a8a6a9",
+                        "secondary-container": "#45464e",
+                        "surface-variant": "#353438",
+                        "on-surface-variant": "#bcc9cd",
+                        "inverse-primary": "#00687a",
+                        "on-primary-container": "#00424f",
+                        "surface-container-low": "#1b1b1e",
+                        "on-surface": "#e4e1e6",
+                        "surface-bright": "#39393c",
+                        "on-secondary": "#2f3037",
+                        "secondary-fixed": "#e2e1eb",
+                        "primary-container": "#06b6d4",
+                        "background": "#131316",
+                        "on-primary": "#003640",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed-variant": "#004e5c",
+                        "on-tertiary": "#303033",
+                        "surface-container-lowest": "#0e0e11",
+                        "primary-fixed-dim": "#4cd7f6",
+                        "secondary": "#c6c6cf",
+                        "tertiary-fixed-dim": "#c8c6c9",
+                        "outline-variant": "#3d494c",
+                        "on-secondary-container": "#b4b4bd",
+                        "surface-dim": "#131316",
+                        "on-tertiary-fixed-variant": "#47464a",
+                        "primary-fixed": "#acedff",
+                        "surface": "#131316",
+                        "inverse-on-surface": "#303033",
+                        "canvas-dark": "#0A0A0B",
+                        "border-muted": "#27272A"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "section-gap": "8rem",
+                        "element-gap": "1.5rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Geist", "sans-serif"],
+                        "display": ["Geist", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["JetBrains Mono", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom Utilities and Animations */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .glass-panel {
+            background: rgba(39, 39, 42, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid theme('colors.outline-variant');
+        }
+
+        .primary-glow:hover {
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+            border-color: theme('colors.primary');
+        }
+
+        .grid-bg {
+            background-image: 
+                linear-gradient(to right, rgba(134, 147, 151, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(134, 147, 151, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .vignette {
+            background: radial-gradient(circle at center, transparent 0%, theme('colors.background') 100%);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col font-body selection:bg-primary/30 selection:text-primary">
+<!-- Global Background Elements -->
+<div class="fixed inset-0 z-[-1] grid-bg pointer-events-none"></div>
+<div class="fixed inset-0 z-[-1] vignette pointer-events-none"></div>
+<!-- TopNavBar Component -->
+<header class="fixed top-0 w-full z-50 border-b border-on-surface-variant backdrop-blur-md bg-background/80 dark:bg-background/80">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 mx-auto max-w-[1200px]">
+<a class="font-display-lg text-headline-md-mobile md:text-headline-md tracking-tighter text-primary dark:text-on-primary" href="../index.html">Malvika Chak</a>
+<nav class="hidden md:flex gap-2">
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:bg-surface-variant hover:text-primary dark:hover:text-on-primary transition-all duration-300 px-4 py-2 rounded-md font-technical-label text-technical-label" href="../index.html">About</a>
+<a class="text-primary dark:text-on-primary font-bold bg-surface-variant/80 border border-outline-variant/50 px-4 py-2 rounded-md font-technical-label text-technical-label shadow-sm" href="../index.html">Work</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:bg-surface-variant hover:text-primary dark:hover:text-on-primary transition-all duration-300 px-4 py-2 rounded-md font-technical-label text-technical-label" href="../index.html">Experience</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:bg-surface-variant hover:text-primary dark:hover:text-on-primary transition-all duration-300 px-4 py-2 rounded-md font-technical-label text-technical-label" href="../index.html">Contact</a>
+</nav>
+<a href="../assets/Malvika_Chak_Resume.pdf" download="Malvika_Chak_Resume.pdf" class="bg-surface-bright text-on-surface border border-outline-variant px-4 py-2 font-label text-label-sm rounded-sm hover:border-primary hover:text-primary transition-all duration-300 hidden md:block">Download CV</a>
+<a href="../assets/Malvika_Chak_Resume.pdf" download="Malvika_Chak_Resume.pdf" class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-section-gap">
+<div class="flex flex-col gap-element-gap max-w-4xl">
+<!-- Label -->
+<div class="inline-flex items-center gap-2">
+<span class="bg-surface-container text-primary font-label text-label-sm px-3 py-1 rounded-sm border border-outline-variant/50">CAD / PROCESS</span>
+</div>
+<!-- Title & Subtitle -->
+<h1 class="font-headline font-bold text-5xl md:text-display-lg leading-tight tracking-tighter text-surface-bright">
+                    Technical Detailed Drawings
+                </h1>
+<p class="font-body text-body-lg text-on-surface-variant max-w-2xl">
+                    Precision Drafting &amp; GFC Documentation. High-fidelity architectural and interior detailing ensuring flawless execution from concept to execution</p>
+</div>
+</section>
+<!-- Metadata Bar (Bento style mini-cards) -->
+<!-- Visual Documentation Section -->
+<section class="flex flex-col gap-12"><div class="border-b border-outline-variant/30 pb-4">
+<h2 class="font-headline font-semibold text-headline-md text-surface-bright">Drafting &amp; Documentation</h2>
+</div>
+<div class="flex flex-col gap-12 max-w-7xl mx-auto w-full">
+<img alt="Technical Drawing 1" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRiA69jCJ0OlX3-yGnVyLNs3tPpU_OhFxlUTjTG2aa2zNsqw2df-YkDfvGFqOVOnsz159XycgKOG56Tse-PvwzMDoWyznj-yOkxZAceNJ0RqEknJzHfAdfrA9JlfuXoKEbNG2p2-hLszMee4nlL9BDaERKJ_9_6j7pwtxmyaIKebXeKwpaWkVGa5N0AArSOYoTZOWVSatEr4cWZD2s3dS8G8dBbEtV3WJVHEPC9LxXyIOfg9auiiQ7qf0GqUMZJAsIdQ">
+<img alt="Technical Drawing 2" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk_hB-WCVlz56cdmeuYvbLjpkqx53Cpld9X_UmFqvkt9ZpIhKW9Z6q9ule2APciRLikQAqeOO5w0q0tDS5eJXgMgR0hzR8cEG6JWQbicSO1ju2-WUM9s0j-VgKjrBfsVo9MQ4UKd55kheLAdw6ciMCeRNsOS4jrGB8onEjlvmxtyMoX5vui_Ds2s_ZdfAbYAyU3cQIbKO_16tQx2PSGkzEdWIomB6XbZmpAhaP5qA1dbtm8uUPCPcre7scRsbjwi7msA">
+<img alt="Technical Drawing 3" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGWrYVbslptariCI4g6XwALhR2h2ItLfhMG3HbPb2J9yqSX_Efv9B43fTshiOnxqedJ8fIrtsH0bgvsepMRAbJ7dTnL9C1cBhF4WN4kNncf9SukPYTK28gk5fxucee7_S9eknBC3ZKbQXEdfZlgM3T-VakLRF58u2kajRc44ny7N6Ep8O-hwwbJ_dzjSZYobjhnIt3dwkjMTtSSii8JVCbWpHhbYSRhUspUrs7Iu46RejvQuiwbO3jsNApW1PqCP5ibw">
+<img alt="Technical Drawing 4" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5evjbIxId_JhdxFw4e5i2-O88sHDLfuuCO3x0I9d8P0Q9uaZ_10EwhTFAchvFEkB-lpyvnfcyT6L4OqBxVE3sWf1QzAFpiS7Bt1RAIUtPauykmPKVIYjw78BAThzkbN5GnO_nsoNgaokSooDNMJCjuRJZeaxG5SEE4Cgl3uBiaLoCoBfJp0KUqQfkOH7UIMjs5xqMUkvnw95H1phc5lHzFxRhF1o4ZoINLO6n4ChvbbxBLeqvoaZ6NmHkEof3Sfh2CQ">
+<img alt="Technical Drawing 5" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAajKc0FTcdVIHFpEiWDcvCMM5xKVn5edA21Q7J-EVtQJ3b7zpZRGecUIGU4-h3QkWmBDfxr3MP-r8OURNQD16x9evk6RKeIWoHX4CEwarMzY6npSpI-XAOzrXMi0JqRx3w6NXiV1UrDqFaU-gcUgFhtle7MJYjl2h1BnJ4xvgcn0rcJ1xzVDxhH6-KCIsmexxHG-fzrZqcgERSEoeNaCnOUSN0eh-ZBXr29ulxHXs9GrWhBgxf0aBmmBTUMsc-CKtIKg">
+<img alt="Technical Drawing 6" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhIiTkNeVHQyBnuEUU9IwiYZKwTRd66-BFvvYFNMM3oRkJx9pzyRyX5Wc6UaEwUcCWZeeCLnYgxGiQRyM85XfqyHgvamwHj96PHNuA05XI1dv2_dHA95Nsqde7lSuiax5RDy_LYKfVIwU0gPWiAAS7y9vaFgEHxBELnxHAnE5Wa7hHN8hItbUEvNjK4Br7PEChMK0ryQ-6WlOyBE7lr8VCUhWwoOLLfLWxsC1mVz73_IrJ7sTR1q-xJhcPXipH_-NxpA">
+<img alt="Technical Drawing 7" class="w-full h-auto rounded-sm border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCR31EvNYptkPZBBEORtTexXlNks07o7RjcZWYwd8dd2aW9sd4ZJ1YLFr1QF02UMc1-FmbmpgzGdSu_-DUmjkj0cB9KBJ9H4Z0tfTTs82VHu-zpu0rUwmqjVKb4AA4j1FllNqOYgDuMIAYWeNBpz-r0GWGSjwWlnx3y-kaEIc8h8npiy3-6CVVfSVDdYhsGE-3dkT4lcBBLXDpZ8hew2FoFoCkRLp6fBwAsgXiyiXEwSlDHAQrymAKok5neboUhDW_Kw">
+</div></section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant/20 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-6 max-w-[1200px] mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4 w-full md:w-auto">
+<a class="text-xl font-bold text-on-surface flex items-center gap-2" href="../index.html">
+<img alt="Avatar" class="w-8 h-8 rounded-full border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8qvfzxBRA1PPbSh5OmAdhqFbwGDr370IJEuvIB6FD0s_aR3wAzKfYoaX3sWsOdlFK_xkweABChbYbSKsPpbpjVfOSKEJu9oHMQJT7SzGYHd1fyT_ZM8LL0abNplLpTiCDCJ2VfwTXOqQGJtlgB1cPB1DDaGgJ-7btS02M5YTRUVU8S3avpqAzQA9K0zGGVpXsQ4KBKqs_SZcFW9RNs5AOLJdJDBnNNcjju0FcSE_YZ9BqJMBH_wx_exlB4W73Q-0Ljgfz5joZL0Xnw">
+<span class="">Malvika Chak</span>
+</a>
+<p class="text-label-sm text-on-surface-variant">2026</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-6 w-full md:w-auto">
+<a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="../index.html">LinkedIn</a>
+<a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="../index.html">Instagram</a>
+<a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="../index.html">Email</a>
+<a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="../index.html">Behance</a>
+<a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="tel:+917011636774">+91 7011636774</a><a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" href="mailto:malvikachak06@gmail.com">malvikachak06@gmail.com</a><a class="text-label-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer ml-4" href="../index.html">New Delhi — India</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

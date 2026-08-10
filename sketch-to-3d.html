@@ -1,0 +1,147 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sketch to 3Ds - Case Study | Malvika Chak</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#a8a6a9",
+                        "primary-fixed": "#acedff",
+                        "on-tertiary-fixed": "#1b1b1e",
+                        "surface-container-high": "#2a2a2d",
+                        "on-tertiary-container": "#3c3c3f",
+                        "on-tertiary-fixed-variant": "#47464a",
+                        "on-primary-fixed-variant": "#004e5c",
+                        "primary-container": "#06b6d4",
+                        "on-secondary-fixed": "#1a1b22",
+                        "on-secondary": "#2f3037",
+                        "error": "#ffb4ab",
+                        "on-primary": "#003640",
+                        "on-secondary-container": "#b4b4bd",
+                        "tertiary-fixed-dim": "#c8c6c9",
+                        "surface-container": "#1f1f22",
+                        "on-primary-fixed": "#001f26",
+                        "surface-container-lowest": "#0e0e11",
+                        "surface-container-low": "#1b1b1e",
+                        "error-container": "#93000a",
+                        "surface-bright": "#39393c",
+                        "outline": "#869397",
+                        "primary": "#4cd7f6",
+                        "on-error-container": "#ffdad6",
+                        "surface-dim": "#131316",
+                        "secondary-fixed": "#e2e1eb",
+                        "on-tertiary": "#303033",
+                        "outline-variant": "#3d494c",
+                        "inverse-surface": "#e4e1e6",
+                        "secondary-container": "#45464e",
+                        "secondary-fixed-dim": "#c6c6cf",
+                        "surface-container-highest": "#353438",
+                        "secondary": "#c6c6cf",
+                        "on-surface": "#e4e1e6",
+                        "inverse-on-surface": "#303033",
+                        "background": "#131316",
+                        "primary-fixed-dim": "#4cd7f6",
+                        "surface-tint": "#4cd7f6",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#bcc9cd",
+                        "surface": "#131316",
+                        "on-secondary-fixed-variant": "#45464e",
+                        "inverse-primary": "#00687a",
+                        "on-background": "#e4e1e6",
+                        "on-primary-container": "#00424f",
+                        "surface-variant": "#353438",
+                        "tertiary-fixed": "#e4e1e5",
+                        "tertiary": "#c8c6c9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Geist"],
+                        "display": ["Geist"],
+                        "body": ["Inter"],
+                        "label": ["JetBrains Mono"]
+                    },
+                    "fontSize": {}
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131316;
+            color: #e4e1e6;
+        }
+        .text-glow-primary {
+            text-shadow: 0 0 20px rgba(76, 215, 246, 0.4);
+        }
+        .border-glow-hover:hover {
+            box-shadow: 0 0 15px rgba(76, 215, 246, 0.2);
+            border-color: #4cd7f6;
+        }
+    </style>
+</head>
+<body class="font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-surface-bright tracking-tighter" href="../index.html">Malvika Chak</a>
+<div class="hidden md:flex gap-2 items-center">
+<a class="font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-surface-bright transition-all active:scale-95" href="../index.html#about">About</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 rounded-lg bg-surface-container-highest text-primary font-bold border border-outline-variant/30 transition-all active:scale-95" href="../index.html#work">Work</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-surface-bright transition-all active:scale-95" href="../index.html#experience">Experience</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-surface-bright transition-all active:scale-95" href="../index.html#contact">Contact</a>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-widest border border-outline-variant text-on-background px-6 py-2 rounded hover:bg-surface-container-high transition-all duration-300 hidden md:block text-center" download="Malvika_Chak_Resume.pdf" href="../assets/Malvika_Chak_Resume.pdf">Download CV</a>
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 max-w-[1200px] mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-[4rem]">
+<div class="flex flex-col gap-4">
+<span class="font-label text-label-sm text-primary tracking-widest uppercase">Process</span>
+<h1 class="font-display text-display-lg-mobile md:text-[64px] font-bold leading-[1.1] tracking-[-0.04em] text-on-surface text-glow-primary">
+                    Sketch to 3Ds
+                </h1>
+</div>
+</section>
+<!-- Visual Documentation Section -->
+<section class="flex flex-col gap-8 w-full">
+<img alt="Sketch to 3D View 1" class="w-full h-auto rounded-lg shadow-lg border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaBXwSPdnscT2609ECA_0UrPDxol-kdp06FhhLnijvpDCmGJZV8PV2mfLu12lClInudI_nKmcdFA2hYkBC_EwJNMXQDn5QBZyTnSjJMh8ThyVBRvyb1_XKgEctZofxrWgUyNNmCXFMHV1rljionJlZApflXD-7fM-6v5rfTR6eg-MRXSqp4UTt971CtKCyDntOgtoLRwF7QiHnU3Drg9cE-Fe24C7ZHQTCHAPLWtviwXPSEXb9eTQKQ7kIq3xqFt_hUg">
+<img alt="Sketch to 3D View 2" class="w-full h-auto rounded-lg shadow-lg border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2cIDv-JfCv97m79HzPY2SA3gfcN2kfhObwdnN8Wi0enVVPeQSt417k5XMaoaBPOes_t_tsqtqvYrGtdR-EKJN1kAoM__w0CYeaN5i7d8FLOImEcXo3wMrKKGSf2p3xNYFVvLMO42XBTrYKZkdxqzUbCtFnZIjCN6epqb3TkkOlJQ3Sq5n1XNMAL2hGasBNkDvvHejnEzK5t2sBziIQnTi4vc-BGDgPTaLwCced-NvHm0PHeoRp9JiDWJiIVEbViE-9Q">
+<img alt="Sketch to 3D View 3" class="w-full h-auto rounded-lg shadow-lg border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6M6tHkywPwg7O4d1ezHlax73rBobZmf2344VFURnTkJb0yms14a7wpT2EzL6cP2XF2S4Hx9m2Z_7RxkBlcBC-lU8QfJSzpLZqLRdRImuGCiGQxLuJOovOCrK9ctMZisTQA1RYqTPB5EOSdEBne75EtNeQ8XaUtJ8rjovpgcLTrOizhHmAAqG4dYcx_cGNVa98uO_cKa13GV-k7Dfdd4emgYO9N8dkTkowOCPgOm5SMWBVVyTkhV_1aEAlaOtAwHxrcA">
+<img alt="Sketch to 3D View 4" class="w-full h-auto rounded-lg shadow-lg border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlpffYF5YXaL_4VEZK0q_Akehn4-kGeGzs-_EP6b3BEYZulxAEX2Cq0UEngQdV6Nbyt4NkKkJ2McsTkKyuBAtF-P0qUimtsgdiMKqYcmGTeA02_3CqFm3gBd5q_z5Rqh5TQq0m93lQca2irU4cAGXmBuhFwdWpR2zkRk_vYsnN7TfCvKa5ZTOXnpIYZ-GAB_rTNCDBbpS_uVl4dYtxUsyoJn35q_ZhXvUEB8mmj6elVOdirJXLAuB4k07KPOrSci7BSA">
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-outline-variant/20 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-gutter max-w-container-max mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4 w-full md:w-auto">
+<a class="font-headline-md text-headline-md font-bold text-surface-bright flex items-center gap-2" href="../index.html">
+<img alt="Avatar" class="w-8 h-8 rounded-full border border-border-muted" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8qvfzxBRA1PPbSh5OmAdhqFbwGDr370IJEuvIB6FD0s_aR3wAzKfYoaX3sWsOdlFK_xkweABChbYbSKsPpbpjVfOSKEJu9oHMQJT7SzGYHd1fyT_ZM8LL0abNplLpTiCDCJ2VfwTXOqQGJtlgB1cPB1DDaGgJ-7btS02M5YTRUVU8S3avpqAzQA9K0zGGVpXsQ4KBKqs_SZcFW9RNs5AOLJdJDBnNNcjju0FcSE_YZ9BqJMBH_wx_exlB4W73Q-0Ljgfz5joZL0Xnw">
+<span class="">Malvika Chak</span>
+</a>
+<p class="font-label-sm text-label-sm text-on-surface-variant">2026</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-6 w-full md:w-auto"><a href="tel:+917011636774" class="font-label-sm text-label-sm text-on-surface-variant hover:text-surface-bright transition-colors cursor-pointer">+91 7011636774</a><a href="mailto:malvikachak06@gmail.com" class="font-label-sm text-label-sm text-on-surface-variant hover:text-surface-bright transition-colors cursor-pointer">malvikachak06@gmail.com</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-surface-bright transition-colors cursor-pointer" href="../index.html">New Delhi — India</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
