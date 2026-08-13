@@ -1,5 +1,5 @@
 # Malvika Chak — Interior Design Portfolio
 
-Final Google Stitch screens with local high-quality image assets, connected project pages, and resume download.
+Static portfolio exported from Google Stitch, prepared for GitHub/Vercel deployment.
 
-No build command is required. Deploy `index.html` as a static site.
+No build command is required. Entry point: `index.html`.
